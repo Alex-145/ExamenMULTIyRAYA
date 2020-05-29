@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+	<script src="codigo.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<link rel="stylesheet" href="img/">
+	<title>EXAMEN01</title>
+</head>
+<body>
+	<div id="sssssss">
+		<div id="mi_resultado">
+			<div>
+				<h3 class="title">PASOS</h3>
+				<p id="section"></p>
+				<button class="aceptar" onclick="botonaceptar()">NEXT</button>
+			</div>
+		</div>
+	</div>
+	<div class="multi">
+		<div class="caja">
+			<h1 class="titles">MULTIPLICACION RUSA</h1>
+		</div> 	
+			<div class="datos">
+				<br>
+				<form>
+					<label class="DM" for="">Número1: </label><br>
+					<input class="DM" type="number" name="" required="true" id="numerico1"><br>
+					<label class="DM" for="">Número2: </label><br>
+					<input class="DM" type="number" name="" required="true" id="numerico2"><br> <br>
+				</form>
+				<button id="boton" class="buton" onclick="multiplicaionRusa()">CALCULAR</button>
+				<button class="buton" onclick="verpasoMR()">PASOS</button><br>
+				<button class="buton" onclick="limpiar()">CLEAN</button><br>
+
+				<label for="" id="rr1">RESPUESTA:<label for="" id="respuesta"></label></label>
+			</div>
+	</div>
+	<div class="Tresraya">
+		<div class="contenidoRaya">
+			<div class="caja">
+				<h1 class="titles">TRES EN RAYA</h1>
+			</div><br>
+			<div id="nombres">
+				<label for="">Ingrese los jugadores</label><br>
+				1° <input type="text" name="" class="DM" id="jugador1"><br>
+				2° <input type="text" class="DM" id="jugador2">
+			</div>
+			<div class="crono">
+				<button id="ingrezarjugador" class="buton" onclick="ingresarJugador()">PLAYERS</button><br><br>
+				<button id="empezar" class="buton" onclick="mostrareventRaya()">PLAY</button><br><br>
+				<button id="empezar" class="buton" onclick="stop()">STOP</button><br><br>
+				<a href="javascript:location.reload()"><button class="buton" onclick="reiniciar()">RESTART</button></a>	
+			</div>
+			<div>
+				<h4 id="respuesta2"></h4>
+			</div>
+		</div>
+		<div id="caja2">
+			<table id="table" align="center" border="1" style="display:none">
+				<tr>
+					<td width="100" height="100" id="c0" onclick="pcelda(0)"></td>
+					<td width="100" height="100" id="c1" onclick="pcelda(1)"></td>
+					<td width="100" height="100" id="c2" onclick="pcelda(2)"></td>
+				</tr>
+				<tr>
+					<td width="100" height="100" id="c3" onclick="pcelda(3)"></td>
+					<td width="100" height="100" id="c4" onclick="pcelda(4)"></td>
+					<td width="100" height="100" id="c5" onclick="pcelda(5)"></td>
+				</tr>
+				<tr>
+					<td width="100" height="100" id="c6" onclick="pcelda(6)"></td>
+					<td width="100" height="100" id="c7" onclick="pcelda(7)"></td>
+					<td width="100" height="100" id="c8" onclick="pcelda(8)"></td>
+				</tr>
+			</table>
+			<div class="cronometro">
+				<div id="h">0</div><div>:</div>
+				<div id="m">00</div><div>:</div>
+				<div id="s">00</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
